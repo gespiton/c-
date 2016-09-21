@@ -23,7 +23,18 @@ namespace firstProj
             //Out_mod(ref i);
             //Console.WriteLine(i);
             //named_par("one", three: "three", two: "two");
-            simple_array();
+            //simple_array();
+            Emp emp = Emp.contractor;
+            Console.WriteLine(emp.GetType());
+            Console.WriteLine(typeof(Emp));
+            //Console.WriteLine(Enum.GetUnderlyingType(emp.GetType()));
+
+            // what's the diff of Enum and enum
+            Enum e;
+            Console.WriteLine(e.GetType());
+            Console.WriteLine(emp.GetType());
+
+
             Console.ReadLine();
             return 0;
         }
@@ -56,6 +67,10 @@ namespace firstProj
             Console.WriteLine("one:{0}\ntwo:{1}\nthree:{2}",113,two,three);
         }
         
+        static void EvaluateEnum(System.Enum e)
+        {
+
+        }
         
         static void simple_array()
         {
@@ -79,8 +94,15 @@ namespace firstProj
 
         static void enum_fun()
         {
-
-
+            int i = 3;
+            
+        }
+        enum Emp
+        {
+            mananger,
+            grunt,
+            contractor,
+            vicepresident
         }
     }
     //class test
