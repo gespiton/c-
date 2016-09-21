@@ -80,6 +80,7 @@ namespace firstProj
         static void enum_fun()
         {
 
+
         }
     }
     //class test
