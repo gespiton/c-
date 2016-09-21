@@ -60,14 +60,14 @@ namespace firstProj
         static void simple_array()
         {
             int[] arr = new int[] { 1 ,3,4,0};
-            var a = arr.Reverse();
+            var a = arr.Reverse();              // this two line reverse the array
             int[] aa = a.ToArray();
-            
+            Array.Reverse(arr);
+
             int[] arrr = new int[] { 3, 2, 2, 4, 3 };
             int[,] two_arr = new int[3, 4];                       // rectangular array
             int[][] other_arr = new int[3][];                     // normal array
-            var date = new DateTime(1122, 2, 3);
-            var ar = new[] { 3, 4 };
+            var date = new DateTime(1122, 2, 3);          // when ce date, it will give me the content like int
             Console.WriteLine(two_arr.Rank);
             Console.WriteLine(arr);
             foreach (var ii in aa)
@@ -77,6 +77,10 @@ namespace firstProj
 
         }
 
+        static void enum_fun()
+        {
+
+        }
     }
     //class test
     //{
